@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Exer 2</string>
+    <string name="title">Which Disney Villain Are You?</string>
+    <string name="start_name">Start</string>
+    <string name="retry_name">Retry</string>
+    <string name="blank" />
+</resources>
