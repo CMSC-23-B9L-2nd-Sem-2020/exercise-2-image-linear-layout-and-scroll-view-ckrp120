@@ -13,8 +13,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val startBtn: Button = findViewById(R.id.start)
-
+        val resetBtn: Button = findViewById(R.id.retry)
         startBtn.setOnClickListener{ randomizeCharacter() }
+        resetBtn.setOnClickListener { reset() }
     }
 
     private fun randomizeCharacter(){
@@ -71,6 +72,16 @@ class MainActivity : AppCompatActivity() {
         descView.setText(charDes)
         nameView.setText(charName)
 
+    }
+
+    private fun reset(){
+        val charView: ImageView = findViewById(R.id.charView)
+        val nameView: TextView = findViewById(R.id.title)
+        val descView: TextView = findViewById(R.id.description)
+
+        charView.setImageResource(R.drawable.disneylogo)
+        nameView.setText(R.string.title)
+        descView.setText(R.string.blank)
     }
 
 
